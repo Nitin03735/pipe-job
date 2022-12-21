@@ -1,11 +1,6 @@
 
 pipeline {
-	agent {
-		label {
-			label 'built-in'
-			customeWorkspace "/mnt/pipe-job"
-			}
-		}
+    agent any
 	stages {
 		stage ('config'){
 			steps {
